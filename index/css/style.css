@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+    	margin: 0px;
+		padding: 0px;
+		user-select:none;
+}
+#container
+{
+	width:100%;
+	height:auto;
+	min-height:400px;
+	background:#F00;
+}
+
+#top
+{
+	width:100%;
+	height:20px;
+	background:#6A6A6A;
+}
+
+#center
+{
+	width:100%;
+	height:auto;
+	min-height:400px;
+	background:#CE5568;
+}
+.toLast
+{
+	height:25px;
+	background:#363636;
+}
+.toLast img
+{
+	margin:8px;
+}
+#bottom
+{
+	width:100%;
+	height:60px;
+	background:#363636;
+}
+.setIcon
+{
+	width:45%;
+	float:left;
+	margin:18px 0px 0px 15px;
+}
+.upload
+{
+	width:45%;
+	float:left;
+	margin:18px 0px 0px 15px;
+	text-align:right;
+}
+
+.showSet
+{
+	width:100%;
+	height:60px;
+	background:#363636;
+	display:none;
+}
+.showSetIcon
+{
+	width:10%;
+	float:left;
+	margin:18px 0px 0px 15px;
+}
+.showUpload
+{
+	width:80%;
+	float:left;
+	margin:18px 0px 0px 5px;
+	text-align:right;
+}
+.colorBar
+{
+	width:60%;
+	float:left;
+}
+.colorBar img
+{
+	margin-top:4px;
+}
+.transparency
+{
+	position:relative;
+	width:30%;
+	float:right;
+}
+.transparency div
+{
+	position: absolute;
+	float:right;
+	right:0;
+}
+.line
+{
+	margin-top:8px;
+	z-index:-1;
+}
+.circle
+{
+	margin-top:4px;
+	z-index:5;
+}

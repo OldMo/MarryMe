@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>JavaScript Book--´úÂë9-40</TITLE>
+</HEAD>
+<script language="JavaScript">
+function CreateXML(){
+
+var xmldoc, xmlnode;
+xmldoc = new ActiveXObject("Msxml2.DOMDocument.4.0");
+alert("");
+xmldoc.load("C:\\XML.xml");
+schar = '\r';
+xmlhead = '©‚?xml version="1.0" encoding="UTF-16" ?©ƒ'+schar;
+xmltitle = '©‚documenttitle="information"©ƒ'+schar;
+xmlnode = '';
+var i;
+for(i=0;i<10;i++){
+xmlnode = xmlnode + '<xmlnode type="node" name="node'+i+'"/>'+schar;
+}
+xmlfoot = '©‚/document©ƒ';
+strXML = xmlhead+xmltitle+xmlnode+xmlfoot;
+xmldoc.loadXML(strXML);
+xmldoc.save("C:\\XML.xml");
+alert("OK");
+}
+</script>
+<BODY>
+<TABLE>
+   <TR>
+<TD><INPUT TYPE="button" NAME="save" onclick="CreateXML()" value="±£´æ"></TD>
+   </TR>
+</TABLE>
+</BODY>
+</HTML> 
